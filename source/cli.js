@@ -13,7 +13,8 @@ const rl = readline.createInterface({
   });
 
 // Auto-start logging when app starts
-console.log("Command Logging is enabled. Type 'clear-logs' to clear logs.");
+console.log("Command Logging is enabled. Type 'clear-logs' to erase logs.");
+console.log("Type 'toggle-logging' to enable/disable auto-logging.");
 
 rl.on('line', (input) => {
   if (input.trim() === 'clear-logs') {
